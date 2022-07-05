@@ -24,8 +24,7 @@ PASSWORD = 'Notadmin1'
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
-    SECRET_KEY = f.read().strip()
+SECRET_KEY = 'django-insecure-9j6xky=e$q7gdbavk)9#9&b2dd%)sm=@gqr4gd$k@#*3c^4lfh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False 
