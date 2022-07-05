@@ -30,8 +30,8 @@ with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False 
 
-ALLOWED_HOSTS = ['zacoinfotech.com','www.zacoinfotech.com','127.0.0.1']
-# 54.221.39.154,zacoinfotech.com,www.zacoinfotech.com,127.0.0.1:8000
+ALLOWED_HOSTS = ['127.0.0.1']
+
 
 
 # Application definition
@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
     'services.apps.ServicesConfig',
-  
 ]
 
 MIDDLEWARE = [
@@ -82,26 +81,17 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'zacoweb',
-        'USER': 'zacoweb',
-        'PASSWORD': PASSWORD,
-        'HOST': 'zacoweb.ccc2s5rmpetf.us-east-1.rds.amazonaws.com',
+        'NAME': 'zaco',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
+        'HOST': 'localhost',
     }
 }
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'zaco',
-#         'USER': 'postgres',
-#         'PASSWORD': 'admin',
-#         'HOST': 'localhost',
-#     }
-# }
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
